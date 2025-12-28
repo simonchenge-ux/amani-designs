@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Shop Curtains | Amani Designs</title>
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<header class="navbar">
+  <h1 class="logo">Amani Designs</h1>
+</header>
+
+<section class="page">
+  <h2>Curtain Collections</h2>
+
+  <div class="grid">
+
+    <!-- Kitchen Curtains -->
+    <div class="product-card">
+      <img src="images/products/kitchen.jpg">
+      <h3>Kitchen Curtains</h3>
+      <p class="price">KES 500</p>
+    </div>
+
+    <!-- Wall Curtains -->
+    <div class="product-card">
+      <img src="images/products/wall.jpg">
+      <h3>Wall Curtains</h3>
+
+      <label>Meters:</label>
+      <select onchange="updateWallPrice(this)">
+        <option value="1">1 Meter</option>
+        <option value="2">2 Meters</option>
+        <option value="3">3 Meters</option>
+        <option value="4">4 Meters</option>
+        <option value="5">5 Meters</option>
+      </select>
+
+      <p class="price">KES <span id="wall-price">3000</span></p>
+    </div>
+
+    <!-- Sheers -->
+    <div class="product-card">
+      <img src="images/products/sheer.jpg">
+      <h3>Sheer Curtains</h3>
+
+      <label>Meters:</label>
+      <input type="number" min="1" value="1"
+             onchange="updateSheerPrice(this)">
+
+      <p class="price">KES <span id="sheer-price">500</span></p>
+    </div>
+
+  </div>
+</section>
+
+<script src="js/main.js"></script>
+</body>
+</html>
